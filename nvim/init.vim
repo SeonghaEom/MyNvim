@@ -219,5 +219,9 @@ command! -nargs=* Ag call fzf#run({
 \ 'down':    '50%'
 \ })
 
-
+let g:deoplete#auto_complete_start_length = 2
+let g:deoplete#enable_at_startup = 1
+let g:deoplete#tag#cache_limit_size = 3000000
+let g:deoplete#max_list = 40
+let g:deoplete#file#enable_buffer_path = 1
 
